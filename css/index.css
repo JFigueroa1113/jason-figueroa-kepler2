@@ -7,6 +7,16 @@ body {
     min-height: 100vh;
 }
 
+nav a {
+    color: rgb(247, 113, 180);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(250, 153, 250);
+}
+
+
 h1 {
     background-color: rgb(46, 160, 160);
     width: fit-content;
@@ -31,8 +41,48 @@ h2 {
     font-size: 30px;
     font-weight: bold;
     color: rgb(204, 201, 0);
-    text-shadow: 0 0 5px rgb(214, 255, 147), 0 0 10px rgb(214, 255, 147), 0 0 20px rgb(214, 255, 147);
 }
+
+h2:hover {
+    text-shadow: 0 0 5px rgb(214, 255, 147), 0 0 10px rgb(214, 255, 147), 0 0 20px rgb(214, 255, 147);
+    cursor:pointer;
+    width: fit-content;
+}
+
+#experience {
+    padding: 2em;
+  }
+  
+  #experience .job {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: rgb(13, 68, 131);
+    border-radius: 5px;
+  }
+  
+  #experience .job-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  
+  .job-box {
+    background-color: rgb(46, 160, 160);
+    color: rgb(255, 150, 112);
+    padding: 1em;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  #experience .job-description {
+    margin-top: 1em;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+  
 
 #Connect a {
     display: inline-block;
@@ -50,3 +100,11 @@ h2 {
     background-color: rgb(64, 255, 105);
     cursor: pointer;
   }
+
+  #connect .social-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  
