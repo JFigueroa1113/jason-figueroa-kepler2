@@ -88,6 +88,16 @@ h2:hover {
     font-size: 0.95em;
     line-height: 1.5;
   }
+
+/*=====Skills=====*/
+#Skills {
+    background-color: rgb(250, 153, 250);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
   
 /*=====Connect=====*/
 #Connect a {
