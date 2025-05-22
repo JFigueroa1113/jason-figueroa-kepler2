@@ -1,5 +1,10 @@
 /*=== Desktop-Base ===*/
 
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
     background-color: rgb(0, 111, 164);
     color: rgb(255, 150, 112);
@@ -99,28 +104,28 @@ h2:hover {
 
   
 /*=====Connect=====*/
-#Connect a {
+#connect a {
     display: inline-block;
     padding: 0.625rem 0.9375rem;
-    text-align: right;
+    text-align: left;
     margin: 0 auto;
     background-color: #056d02;
     color: #f771b4;
     border-radius: 1.5625rem;
-    box-shadow: 0.375rem 0.5rem 0.375rem 0 rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2);
+    box-shadow: 0.375rem 0.5rem 0.375rem 0 rgba(0, 0, 0, 0.2);
 
 
   }
-  #Connect a:hover {
+  #connect a:hover {
     background-color: rgb(64, 255, 105);
     cursor: pointer;
   }
 
-  #connect .social-links {
+  #connect .social-links{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 1em;
-    justify-items: center;
+    justify-items: left;
   }
 
 /* === Form Styling === */
