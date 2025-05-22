@@ -58,3 +58,26 @@ document.addEventListener("DOMContentLoaded", function () {
     messageForm.reset();
   });
 });
+
+
+fetch("https://api.github.com/users/JFigueroa1113/repos")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(repositories) {
+    console.log(repositories);
+
+    var projectSection = document.getElementById('projects');
+    var projectList = projectSection.querySelector('ul');
+
+    for (var i = 0; i < repositories.length; i++) {
+      var project = document.createElement('li');
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(function(error) {
+    console.error('Error fetching repositories:', error);
+    var projectSection = document.getElementById('projects');
+    projectSection.innerHTML += '<p style="color: red;">Failed to load repositories. Try again later.</p>';
+  });
