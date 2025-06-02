@@ -1,15 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Footer 
-  const body = document.body;
-  const footer = document.createElement("footer");
-  body.appendChild(footer);
+  const footer = document.querySelector("footer");
 
   const today = new Date();
   const thisYear = today.getFullYear();
 
-  const copyright = document.createElement("p");
-  copyright.innerHTML = `&copy; Jason Figueroa ${thisYear}`;
-  footer.appendChild(copyright);
+  footer.innerHTML = `<p>&copy; Jason Figueroa ${thisYear}</p>`;
 
   // Skills
   const skills = ["JavaScript", "HTML", "CSS", "Adobe Photoshop", "GitHub"];
